@@ -1,0 +1,173 @@
+.fundo_form_cadastro{
+    background-color: #053C5E;
+    width: 70%;
+    height: 70vh;
+    margin: 6.9vh auto;
+    border-radius: 47px;
+    display: flex;
+    align-items: center ;
+    /* flex-wrap: wrap; */
+    
+}
+
+.posicionamento_cadastro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+.form_cadastro{
+    /* background-color: aqua; */
+    width: 100%;
+    margin-top: 20vh;
+}
+
+.input_cadastro{
+    /* background-color: blue; */
+    width: 40%;
+    /* height: 30px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+}
+
+.inputs_form{
+    width: 100%;
+    /* height: 40px; */
+	padding: 15px;
+	border: none;
+	margin-bottom: 12px;
+	border-radius: 50px;
+    background-color: #F3F3F3;
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.inputs_form:focus{
+    outline: none;
+}
+
+.inputs_form_senha{
+    width: 90%;
+	padding: 10px;
+	border: none;
+	margin-bottom: 12px;
+	border-radius: 50px 0 0 50px;
+    background-color: #F3F3F3;
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.inputs_form_senha:focus{
+    outline:none
+}
+
+.olho_botao{
+    width: 10%;
+	padding: 10px;
+	border: none;
+	margin-bottom: 12px;
+	border-radius: 0 50px 50px 0;
+    background-color: #F3F3F3;
+    color: #053C5E;
+}
+
+.posicionamento_redirecionamento{
+    display: flex;
+    justify-content: center;
+}
+.redirecionamento{
+    color: white;
+    font-family: 'Tomorrow', sans-serif ;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.redirecionamento > a{
+    color: #EF233C;
+    font-family: 'Tomorrow', sans-serif ;
+    font-size: 15px;
+}
+
+.redirecionamento > a:hover{
+    text-decoration: underline;
+}
+
+.posicionamento_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.btn{
+    width: 20%;
+    height: 4.7vh;
+	padding: 10px;
+	border: none;
+	margin-bottom: 12px;
+	border-radius: 16px;
+    background-color: #EF233C;
+    color: white;
+    font-size: 22px;
+    font-family: 'Squada One', cursive;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1536px){
+    .btn{
+        height: 5vh;
+    }
+
+    .redirecionamento{
+        font-size: 16px;
+    }
+
+    .redirecionamento > a{
+        font-size: 16px ;
+    }
+}
+
+@media screen and (max-width: 1366px){
+    .btn{
+        height: 5.8;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+    .inputs_form_senha{
+        width: 85%;
+    }
+
+    .olho_botao{
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .fundo_form_cadastro{
+        width: 85%;
+        
+    }
+
+    .input_cadastro{
+        width: 90%;
+    }
+
+    .inputs_form_senha{
+        padding: 15px;
+    }
+
+    .btn{
+        width: 40%;
+    }
+}
+
+@media screen and (max-height: 667px){
+    .fundo_form_cadastro{
+        height: 80vh;
+    }
+}

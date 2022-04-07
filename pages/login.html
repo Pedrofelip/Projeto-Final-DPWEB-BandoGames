@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../img/Blaize Baller-icon.jpg">
+    <script src="https://kit.fontawesome.com/842cb4325d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="wrapper flex">
+            <img src="../img/Blaize Baller.gif" alt="Logo do site escrita o nome do site cujo é Bando Games" class="logo_cabecalho">
+            <nav class="botoes_cabecalho">
+                <a class="botao_cabecalho" href="../index.html">inicio</a>
+                <a class="botao_cabecalho" href="#">noticia</a>
+                <a class="botao_cabecalho" href="./cadastro.html">cadastro</a>
+                <a class="botao_cabecalho" href="./login.html">login</a>
+            </nav>
+            <div class="menu_lateral">
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" id="btnfechar" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                    <a href="../index.html">inicio</a>
+                    <a href="#">noticia</a>
+                    <a href="./cadastro.html">cadastro</a>
+                    <a href="./login.html">login</a>
+                  </div>
+                  
+                  <div id="main">
+                    <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></i></button>
+                  </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="fundo_form_login">
+            <form class="form_login">
+                <div class="input_login">
+                    <input id="input_um" class="inputs_form" type="email" placeholder="email">
+                </div>
+                <div class="input_login">
+                    <input id="input_dois" class="inputs_form_senha" type="password" placeholder="password" >
+                    <button type="button" onclick="mostrarOcultarSenha('olho_senha','input_dois')" class="olho_botao"><i id="olho_senha" class="fas fa-eye"></i></i></button>
+                </div>
+                <div class="posicionamento_redirecionamento">
+                    <p class="redirecionamento ">Ainda não possui cadastro? <a href="./cadastro.html">cadastre-se</a></p>
+                </div>
+                <div class="posicionamento_btn">
+                    <button type="button" class="btn">login</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

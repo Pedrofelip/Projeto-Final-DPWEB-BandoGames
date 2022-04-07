@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Squada+One&family=Tomorrow:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho {
+    background-color: #053C5E;
+    width: 100%;
+    height: 105px;
+    /* border-radius: 0 0 12px 12px; */
+}
+
+.logo_cabecalho {
+    width: 7%;
+    height: 7%;
+}
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    font-family: 'Squada One', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    /* transition: 0.3s; */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+    background-color: #053C5E;
+  }
+
+  #btnfechar:hover{
+      background-color: transparent;
+      color: #EF233C;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    color: rgba(255, 255, 255, 0.336);
+  }
+
+  
+
+.botoes_cabecalho {
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.botao_cabecalho {
+    font-family: 'Squada One', cursive;
+    font-size: 27px;
+    text-transform: uppercase;
+    padding: 15px 10px;
+}
+
+.botao_cabecalho:hover {
+    transition: 0.25s;
+    transform: scale(1.07);
+    color: rgba(255, 255, 255, 0.712);
+}
+
+.rodape {
+    width: 100%;
+    height: 155px;
+    background-color: #02131E;
+}
+
+.posicionamento_itens_rodape {
+    display: flex;
+    align-items: center;
+}
+
+.itens_rodape {
+    width: 18%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo_rodape {
+    width: 85px;
+    height: 90px;
+    margin: auto 0;
+}
+
+.linha-vertical {
+    height: 115px;
+    border-right: 3px solid #1D3958;
+}
+
+.links_rodape {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FAD75D;
+    text-transform: uppercase;
+}
+
+ul li span {
+    color: white;
+}
+
+@media screen and (max-width: 1440px) {
+    .cabecalho {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .cabecalho {
+        height: 95px;
+    }
+    .botao_cabecalho {
+        font-size: 26px;
+    }
+    .logo_rodape {
+        width: 70px;
+        height: 75px;
+    }
+    .links_rodape {
+        font-size: 13px;
+        margin-left: 17px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .cabecalho {
+        height: 90px;
+    }
+    .botao_cabecalho {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .linha-vertical {
+        height: 100px;
+    }
+    .logo_rodape {
+        width: 67px;
+        height: 72px;
+    }
+    .links_rodape {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .cabecalho {
+        height: 70px;
+    }
+    .logo_cabecalho {
+        height: 18%;
+        width: 18%;
+    }
+    .botoes_cabecalho {
+        display: none;
+    }
+    .linha-vertical {
+        height: 100px;
+    }
+    .logo_rodape {
+        width: 60px;
+        height: 65px;
+        margin-right: 20px;
+    }
+    .links_rodape {
+        margin-bottom: 50px;
+        font-size: 10px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 415px){
+    .menu_lateral{
+        display: none;
+    }
+}
+
